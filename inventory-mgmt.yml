@@ -1,0 +1,43 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inventory_mgmt
+    username: root
+    password: welcome1
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+contact-info:
+  contactNumber: +91-11111111111
+  emailAddress: contact-us@motorcorp.com
+server:
+  port: 8080
+...
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inventory_mgmt
+    username: root
+    password: welcome1
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+contact-info:
+  contactNumber: +91-888888888888
+  emailAddress: no-test-reply@motorcorp.com
+server:
+  port: 8081
