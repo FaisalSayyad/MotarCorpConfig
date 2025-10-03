@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/inventory_mgmt
     username: root
-    password: welcome1
+    password: "Sayyad"
   jpa:
     generate-ddl: false
     show-sql: true
@@ -29,7 +29,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/inventory_mgmt
     username: root
-    password: welcome1
+    password: "Sayyad"
   jpa:
     generate-ddl: false
     show-sql: true
