@@ -1,8 +1,6 @@
----
+# Dev profile
 spring:
-  config:
-    activate:
-      on-profile: dev
+  profiles: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/inventory_mgmt
@@ -19,18 +17,16 @@ contact-info:
   emailAddress: contact-us@motorcorp.com
 server:
   port: 8080
-  eureka:
-    client:
-      register-with-eureka: true
-      fetch-registry: false
-      service-url:
-        defaultZone: http://localhost:7001/eureka, http://localhost:7002/eureka
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka, http://localhost:7002/eureka
 ---
----
+# Test profile
 spring:
-  config:
-    activate:
-      on-profile: test
+  profiles: test
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/inventory_mgmt
